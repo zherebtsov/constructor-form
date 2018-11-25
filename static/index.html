@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Конструктор форм (Test General Electric)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="app-header__link" href="/">
+      <h1 class="app-header__name">Констурктор форм</h1>
+    </a>
+  </header>
+  <main class="app-main container">
+    <div class="app-main__a-side">
+      <section class="app-main__form-list panel">
+        <h2 class="panel__title">Сохраненные формы</h2>
+        <ul class="panel__container form-list">
+          <li class="form-list__item">
+            <div class="form-list__name">Форма #1</div>
+            <div class="form-list__controls">
+              <button class="button button--icon" title="Редактировать">
+                <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z" class=""></path></svg>
+              </button>
+              <button class="button button--icon" title="Открыть">
+                <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M576 14.4l-.174 163.2c0 7.953-6.447 14.4-14.4 14.4H528.12c-8.067 0-14.56-6.626-14.397-14.691l2.717-73.627-2.062-2.062-278.863 278.865c-4.686 4.686-12.284 4.686-16.971 0l-23.029-23.029c-4.686-4.686-4.686-12.284 0-16.971L474.379 61.621l-2.062-2.062-73.626 2.717C390.626 62.44 384 55.946 384 47.879V14.574c0-7.953 6.447-14.4 14.4-14.4L561.6 0c7.953 0 14.4 6.447 14.4 14.4zM427.515 233.74l-24 24a12.002 12.002 0 0 0-3.515 8.485V458a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h301.976c10.691 0 16.045-12.926 8.485-20.485l-24-24A12.002 12.002 0 0 0 331.976 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V242.225c0-10.691-12.926-16.045-20.485-8.485z" class=""></path></svg>
+              </button>
+            </div>
+          </li>
+          <li class="form-list__item">
+            <div class="form-list__name">Форма #1</div>
+            <div class="form-list__controls">
+              <button class="button button--icon" title="Редактировать">
+                <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z" class=""></path></svg>
+              </button>
+              <button class="button button--icon" title="Открыть">
+                <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M576 14.4l-.174 163.2c0 7.953-6.447 14.4-14.4 14.4H528.12c-8.067 0-14.56-6.626-14.397-14.691l2.717-73.627-2.062-2.062-278.863 278.865c-4.686 4.686-12.284 4.686-16.971 0l-23.029-23.029c-4.686-4.686-4.686-12.284 0-16.971L474.379 61.621l-2.062-2.062-73.626 2.717C390.626 62.44 384 55.946 384 47.879V14.574c0-7.953 6.447-14.4 14.4-14.4L561.6 0c7.953 0 14.4 6.447 14.4 14.4zM427.515 233.74l-24 24a12.002 12.002 0 0 0-3.515 8.485V458a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h301.976c10.691 0 16.045-12.926 8.485-20.485l-24-24A12.002 12.002 0 0 0 331.976 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V242.225c0-10.691-12.926-16.045-20.485-8.485z" class=""></path></svg>
+              </button>
+            </div>
+          </li>
+          <li class="form-list__item">
+            <div class="form-list__name">Форма #1</div>
+            <div class="form-list__controls">
+              <button class="button button--icon" title="Редактировать">
+                <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z" class=""></path></svg>
+              </button>
+              <button class="button button--icon" title="Открыть">
+                <svg height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M576 14.4l-.174 163.2c0 7.953-6.447 14.4-14.4 14.4H528.12c-8.067 0-14.56-6.626-14.397-14.691l2.717-73.627-2.062-2.062-278.863 278.865c-4.686 4.686-12.284 4.686-16.971 0l-23.029-23.029c-4.686-4.686-4.686-12.284 0-16.971L474.379 61.621l-2.062-2.062-73.626 2.717C390.626 62.44 384 55.946 384 47.879V14.574c0-7.953 6.447-14.4 14.4-14.4L561.6 0c7.953 0 14.4 6.447 14.4 14.4zM427.515 233.74l-24 24a12.002 12.002 0 0 0-3.515 8.485V458a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h301.976c10.691 0 16.045-12.926 8.485-20.485l-24-24A12.002 12.002 0 0 0 331.976 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V242.225c0-10.691-12.926-16.045-20.485-8.485z" class=""></path></svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="app-main__elements panel">
+        <h2 class="panel__title">Элементы формы</h2>
+        <ul class="button-group">
+          <li class="button-group__item">
+            <button class="button-group__button button button--outline">Input</button>
+          </li>
+          <li class="button-group__item">
+            <button class="button-group__button button button--outline">Text Area</button>
+          </li>
+          <li class="button-group__item">
+            <button class="button-group__button button button--outline">Checkbox</button>
+          </li>
+          <li class="button-group__item">
+            <button class="button-group__button button button--outline">Radio Buttons</button>
+          </li>
+          <li class="button-group__item">
+            <button class="button-group__button button button--outline">Select</button>
+          </li>
+          <li class="button-group__item">
+            <button class="button-group__button button button--outline">File</button>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="app-main__preview panel">
+      <h2 class="panel__title">Предпросмотр</h2>
+      <div class="panel__container">
+        <div class="form-element">
+          <div class="form-element__container">
+            <label class="form-element__label">Input
+              <input class="form-element__control" type="text" name="" placeholder="text...">
+            </label>
+            <div class="form-element__tools">
+              <button class="button button--icon" title="Редактировать">
+                <svg height="20" width="20" viewBox="0 0 512 512"><path fill="currentColor" d="M493.26 56.26l-37.51-37.51C443.25 6.25 426.87 0 410.49 0s-32.76 6.25-45.25 18.74l-74.49 74.49L256 127.98 12.85 371.12.15 485.34C-1.45 499.72 9.88 512 23.95 512c.89 0 1.79-.05 2.69-.15l114.14-12.61L384.02 256l34.74-34.74 74.49-74.49c25-25 25-65.52.01-90.51zM118.75 453.39l-67.58 7.46 7.53-67.69 231.24-231.24 31.02-31.02 60.14 60.14-31.02 31.02-231.33 231.33zm340.56-340.57l-44.28 44.28-60.13-60.14 44.28-44.28c4.08-4.08 8.84-4.69 11.31-4.69s7.24.61 11.31 4.69l37.51 37.51c6.24 6.25 6.24 16.4 0 22.63z" class=""></path></svg>
+              </button>
+              <button class="button button--icon" title="Вверх">
+                <svg height="20" width="20" viewBox="0 0 448 512"><path fill="currentColor" d="M6.101 261.899L25.9 281.698c4.686 4.686 12.284 4.686 16.971 0L198 126.568V468c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12V126.568l155.13 155.13c4.686 4.686 12.284 4.686 16.971 0l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L232.485 35.515c-4.686-4.686-12.284-4.686-16.971 0L6.101 244.929c-4.687 4.686-4.687 12.284 0 16.97z" class=""></path></svg>
+              </button>
+              <button class="button button--icon" title="Вниз">
+                <svg height="20" width="20" viewBox="0 0 448 512"><path fill="currentColor" d="M441.9 250.1l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L250 385.4V44c0-6.6-5.4-12-12-12h-28c-6.6 0-12 5.4-12 12v341.4L42.9 230.3c-4.7-4.7-12.3-4.7-17 0L6.1 250.1c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z" class=""></path></svg>
+              </button>
+              <button class="button button--icon" title="Удалить">
+                <svg height="20" width="20" viewBox="0 0 320 512"><path fill="currentColor" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z" class=""></path></svg>
+              </button>
+            </div>
+          </div>
+          <div class="form-element__edit">
+            <div class="form-element form-element--dark">
+              <label class="form-element__label">Label
+                <input class="form-element__control" type="text" name="" placeholder="Input">
+              </label>
+            </div>
+            <div class="form-element form-element--dark">
+              <label class="form-element__label">Placeholder
+                <input class="form-element__control" type="text" name="" placeholder="text...">
+              </label>
+            </div>
+            <div class="form-element form-element--dark">
+              <label class="form-element__label">Elements (укажите возможные варианты через запятую)
+                <textarea class="form-element__control" name="" rows="4" placeholder="Телефон, Скайп, Телеграм, Емайл"></textarea>
+              </label>
+            </div>
+            <div class="form-element form-element--dark">
+              <label class="form-element__label">
+                <input type="checkbox" name="">
+                Required
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-element">
+          <label class="form-element__label">Text Area
+            <textarea class="form-element__control" name="" rows="4" placeholder="text..."></textarea>
+          </label>
+        </div>
+        <div class="form-element">
+          <label class="form-element__label">
+            <input type="checkbox" name="" id="test-checkbox">
+            Checkbox
+          </label>
+        </div>
+        <div class="form-element">
+          <fieldset class="form-element__fieldset">
+            <legend class="form-element__label">Radio Buttons</legend>
+            <div class="form-element">
+              <label class="form-element__label">
+                <input type="radio" name="test-radio" checked>
+                Radio Button #1
+              </label>
+            </div>
+            <div class="form-element">
+              <label class="form-element__label">
+                <input type="radio" name="test-radio">
+                Radio Button #2
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-element">
+          <label class="form-element__label">
+            Select
+            <select class="form-element__control form-element__control--select" name="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-element">
+          <label class="form-element__label">File
+            <input class="form-element__control" type="file">
+          </label>
+        </div>
+      </div>
+      <form class="panel__footer save-form" action="">
+        <div class="save-form__container-controls">
+          <p class="form-element">
+            <label class="form-element__label">Введите имя формы
+              <input class="form-element__control" type="text" name="" placeholder="Персональная анкета" required>
+            </label>
+          </p>
+        </div>
+        <div class="save-form__container-buttons">
+          <p><button class="button" type="submit">Сохранить</button></p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="app-footer">
+    <p class="app-footer__author">Dmitry Zherebtsov</p>
+  </footer>
+</body>
+</html>
