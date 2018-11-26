@@ -24,7 +24,7 @@ class App extends Component {
         <div className="content">
           <header className="app-header">
             <Link className="app-header__link" to="/">
-              <h1 className="app-header__name">Констурктор форм</h1>
+              <h1 className="app-header__name">Конструктор форм</h1>
             </Link>
           </header>
 

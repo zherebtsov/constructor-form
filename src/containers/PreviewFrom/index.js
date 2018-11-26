@@ -33,7 +33,7 @@ class PreviewForm extends Component {
   }
 
   shouldComponentUpdate(nextProps) {
-    if (this.props.previewForm !== nextProps.previewForm) {
+    if (this.props.previewForm.fields !== nextProps.previewForm.fields) {
       this.setState({
         error: '',
         success: ''
